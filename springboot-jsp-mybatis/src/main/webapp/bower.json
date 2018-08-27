@@ -1,0 +1,15 @@
+{
+  "name": "springboot-jsp-mybatis",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_resource",
+    "test",
+    "tests"
+  ],
+	"dependencies": {
+		"bootstrap": "4.1.3"
+	}
+}
