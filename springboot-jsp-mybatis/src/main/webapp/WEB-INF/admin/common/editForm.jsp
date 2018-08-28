@@ -116,8 +116,6 @@
 					<div class="col-sm-6">
 					<button type="submit" class="btn btn-primary col-sm-12">提交</button>
 					</div>
-					<br>
-					<a href="home" class="btn btn-primary col-sm-6" >返回主页</a>
 				</div>
 			</div>
 		</form:form>

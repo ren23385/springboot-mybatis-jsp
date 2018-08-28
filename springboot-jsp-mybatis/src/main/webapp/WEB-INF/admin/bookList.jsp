@@ -90,7 +90,7 @@
 											<td><fmt:formatDate value="${book.pubdate}"
 													pattern="yyyy-MM-dd" /></td>
 											<td><img alt="" src="/upload/${book.photo}"
-												style="max-height: 100px;"></td>
+												style="max-height: 100px;" onerror="this.src='/resources/image/null.jpg'"></td>
 
 											<td><a href="bookDel?id=${book.id}"
 												style="text-decoration: none;" title="删除" id="delBook" onclick="delConfirm(event)">

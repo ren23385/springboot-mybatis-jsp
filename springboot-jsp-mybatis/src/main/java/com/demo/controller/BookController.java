@@ -156,10 +156,10 @@ public class BookController {
 	public String bookEdit(@Valid @ModelAttribute Book book, BindingResult result,
 			@RequestParam(value = "file") MultipartFile file, HttpServletRequest request, Model model,HttpSession session) throws IOException, ParseException {
 		
-	/*	String serverVcode = (String) session.getAttribute(ValidateController.serverVCodeName);
+		String serverVcode = (String) session.getAttribute(ValidateController.serverVCodeName);
 		if(!serverVcode.equalsIgnoreCase(book.getVcode())) {
-			result.rejectValue("vcode", "验证码错误");
-		}*/
+			result.rejectValue("vcode","book.vcode", "验证码错误");
+		}
 		
 		if (result.hasErrors()) {
 			ls = typeService.findAll();
@@ -197,10 +197,10 @@ public class BookController {
 		int ret = bookService.editBook(book);
 
 		if (ret > 0) {
-			model.addAttribute("msg", "修改成功");
+			
 			return "redirect:bookList";
 		} else {
-			model.addAttribute("msg", "修改失败");
+			
 			return "redirect:bookList";
 		}
 		
